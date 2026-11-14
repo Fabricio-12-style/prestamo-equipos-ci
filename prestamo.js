@@ -10,7 +10,7 @@ function registrarPrestamo(stock, cantidad) {
   }
 
   // Verificar que existan equipos suficientes.
-  if (stock > 0 && cantidad > stock) {
+  if (cantidad > stock) {
     throw new Error("No hay suficientes equipos disponibles");
   }
 
@@ -19,4 +19,5 @@ function registrarPrestamo(stock, cantidad) {
 }
 
 module.exports = { registrarPrestamo };
+
 
