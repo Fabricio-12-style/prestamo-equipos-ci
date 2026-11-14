@@ -19,3 +19,5 @@ function registrarPrestamo(stock, cantidad) {
 }
 
 module.exports = { registrarPrestamo };
+
+
