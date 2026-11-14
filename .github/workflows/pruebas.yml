@@ -1,0 +1,21 @@
+name: Pruebas automaticas
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  probar-proyecto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v6
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+
+      - name: Ejecutar pruebas
+        run: npm test

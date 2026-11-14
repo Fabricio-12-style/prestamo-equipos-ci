@@ -1,0 +1,9 @@
+{
+  "name": "prestamo-equipos-ci",
+  "version": "1.0.0",
+  "description": "Practica de integracion continua para prestamo de equipos",
+  "main": "prestamo.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}
